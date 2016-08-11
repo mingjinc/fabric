@@ -192,7 +192,7 @@ func (t *AssetManagementChaincode) getBalance(stub *shim.ChaincodeStub, args []s
 // Init initialization, this method will create asset despository in the chaincode state
 func (t *AssetManagementChaincode) Init(stub *shim.ChaincodeStub, function string, args []string) ([]byte, error) {
 	myLogger.Debugf("********************************Init****************************************")
-
+return nil, errors.New("Incorrect number of arguments. Expecting 0")
 	myLogger.Info("[AssetManagementChaincode] Init")
 	if len(args) != 0 {
 		return nil, errors.New("Incorrect number of arguments. Expecting 0")
