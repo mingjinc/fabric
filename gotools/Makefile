@@ -16,13 +16,13 @@
 # under the License.
 #
 
-GOTOOLS = golint govendor goimports protoc-gen-go ginkgo gomega
+GOTOOLS = govendor protoc-gen-go ginkgo gomega
 GOTOOLS_BIN = $(patsubst %,$(GOPATH)/bin/%, $(GOTOOLS))
 
 # go tool->path mapping
 go.fqp.govendor  := github.com/kardianos/govendor
-go.fqp.golint    := github.com/golang/lint/golint
-go.fqp.goimports := golang.org/x/tools/cmd/goimports
+# go.fqp.golint    := github.com/golang/lint/golint
+# go.fqp.goimports := golang.org/x/tools/cmd/goimports
 go.fqp.ginkgo    := github.com/onsi/ginkgo/ginkgo
 go.fqp.gomega    := github.com/onsi/gomega
 
